@@ -1,0 +1,36 @@
+.main-parallax {
+  height: 500px;
+  background:
+
+          linear-gradient(rgba(#444, 0.64), rgba(#444, 0.64)),
+          url("../images/banner-paralax.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+.main-parallax .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-parallax-title {
+  font-family: "Poiret One", sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  color: $colorMain;
+  text-transform: uppercase;
+}
+.main-parallax-title span {
+  color: #FFFFFF;
+}
+
+.main-parallax-text{
+  max-width: 840px;
+  font-weight: 19px;
+  color: rgba(#fff, 0.55);
+  text-align: center;
+  text-shadow: 0.05px 0.05px rgba(white, 0.6);
+}

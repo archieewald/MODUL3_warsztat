@@ -1,0 +1,57 @@
+.main-hero {
+  $color1: rgba(black, 0.86);
+  $color2: rgba(black, 0.9);
+  height: 100vh;
+  background: linear-gradient(
+                  -45deg,
+                  $color1 0%, $color2 25%,
+                  $color2 25%, $color1 50%,
+                  $color1 50%, $color2 75%,
+                  $color2 75%, $color1 100%
+  ),
+  url("../images/main-banner.jpg");
+  background-size: 8px 8px, cover;
+  background-position: center bottom;
+  background-repeat: repeat, no-repeat;
+  display: flex;
+}
+.main-hero .container {
+  display: flex;
+  flex-direction: column;
+}
+.main-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.main-banner-title{
+  svg {
+    width: 1000px;
+  }
+}
+.main-banner-text{
+  max-width: 840px;
+  font-size: 19px;
+  color: rgba(#fff, 0.35);
+  text-align: center;
+}
+.main-banner-button{
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 25px 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 70px;
+  background: rgba(#fff, 0.08);
+}
+.main-banner-button:hover {
+  background: $colorMain;
+  color: #222;
+  border-color: $colorMain ;
+  transition: 0.5s all;
+}

@@ -1,9 +1,14 @@
-*, *:after, *:before {
-    box-sizing: border-box;
-}
+@import "./variables.scss";
 
-body {
-    margin:0;
-    //font-family: $fontFamily;
-    background-color: red;
-}
+@import "./layout.scss";
+@import "./main-hero.scss";
+@import "./page-header";
+@import "./page-nav.scss";
+
+@import "./main-banner-svg.scss";
+@import "./main-paralax.scss";
+@import "./main-love-music.scss";
+
+
+
+
