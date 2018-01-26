@@ -14,10 +14,12 @@
   background-position: center bottom;
   background-repeat: repeat, no-repeat;
   display: flex;
+  flex-direction: column;
 }
 .main-hero .container {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .main-banner {
   display: flex;
@@ -55,3 +57,75 @@
   border-color: $colorMain ;
   transition: 0.5s all;
 }
+.main-hero-arrow {
+  width: 22px;
+  height: 43px;
+  border: 1px solid rgba(#fff, 0.8);
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+}
+
+.main-hero-arrow:before{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  transform: translateX(-50%);
+  animation: heroArrowAnim 1s 0s infinite alternate;
+}
+
+.main-hero-bottom{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.main-hero-bottom span:nth-of-type(1),
+.main-hero-bottom span:nth-of-type(3){
+  background: #fff;
+  margin-right: 80px;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  height: 100%;
+  width: 99.99%;
+}
+.main-hero-bottom span:nth-of-type(3){
+  right: auto;
+  margin-left: 80px;
+  margin-right: 0;
+  left: 50%;
+}
+.main-hero-bottom span:nth-of-type(2){
+  background: url("../images/banner-bottom.svg");
+  width: 262px;
+  height: 51px;
+  display: block;
+}
+@media (min-width: 1060) {
+  svg {
+    width: 800px;
+  }
+}
+@media (min-width: 820) {
+  svg {
+    width: 600px;
+  }
+}
+@media (min-width: 620) {
+  svg {
+    width: 400px;
+  }
+}
+@media (min-width: 420) {
+  svg {
+    width: 300px;
+  }
+}
+
